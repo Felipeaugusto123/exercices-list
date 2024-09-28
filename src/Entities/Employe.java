@@ -34,4 +34,17 @@ public class Employe {
     public void setId(Integer id) {
         this.id = id;
     }
+
+    public void increasySalary(double percentage){
+        salary += salary * percentage/100;
+    }
+
+    @Override
+    public String toString() {
+        return "Employe{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
